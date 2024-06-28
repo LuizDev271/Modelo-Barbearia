@@ -1,0 +1,21 @@
+@media (max-width: 575.98px){
+    section#servicos{
+        height: 900px;
+    }
+
+    section#servicos p{
+        font-size: 13px;
+    }
+
+    section#sobre{
+        height: 1200px;
+    }
+
+    section#contato h2{
+        text-align: center;
+    }
+
+    section#contato{
+        height: 850px;
+    }
+}
