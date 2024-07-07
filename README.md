@@ -1,4 +1,4 @@
-# Modelo-Barbearia
+# Modelo Barbearia
  Modelo de Site para Barbearias <br>
  Tecnologias Usadas: <br>
 
