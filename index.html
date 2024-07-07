@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
-<body>
+<body onscroll="animationLocal()">
 
     <header> <!--Barra de Navegação-->
         <nav class="navbar navbar-expand-md">
@@ -45,16 +45,16 @@
                 <div id="lista-nav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto text-white">
                         <li class="nav-item pl-2 pr-2">
-                            <a class="nav-link" href="">Agendamento</a>
-                        </li>
-                        <li class="nav-item pl-2 pr-2">
-                            <a class="nav-link" href="">Serviços</a>
+                            <a class="nav-link" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item pl-2 pr-2">
                             <a class="nav-link" href="">Fotos</a>
                         </li>
                         <li class="nav-item pl-2 pr-2">
-                            <a class="nav-link" href="">Sobre</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item pl-2 pr-2">
+                            <a class="nav-link" href="#contato">Agendamento</a>
                         </li>
                         <li class="pr-4 pl-4">
                         </li>
@@ -122,7 +122,7 @@
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, consequuntur? Nemo, quo est. Expedita aut, nobis, delectus, ratione optio modi velit iure rerum dolore pariatur voluptate quaerat iste totam unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex debitis illo architecto. Perferendis excepturi assumenda tempora officia fuga odio fugiat doloribus eligendi amet repudiandae! Voluptatibus illo eligendi sunt deserunt neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit laboriosam earum beatae dolore fugit fugiat quo quaerat explicabo</p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio suscipit numquam commodi tenetur veniam voluptatum itaque, voluptatibus, at, eius mollitia fugiat laborum tempora quia hic odio. Commodi excepturi saepe eius!</p>
 
-                    <p id="local"><i class="fa-solid fa-location-dot fa-xl" style="color: #f24e29;"></i><span class="espaco">Rua Congo do Ares, 777, Rio</span></p>
+                    <p id="local" class="invis"><i class="fa-solid fa-location-dot fa-xl" style="color: #f24e29;"></i><span class="espaco" onmouseenter="linhaEmbaixo(this)" onmouseout="bordaNormal(this)">Rua Congo do Ares, 777, Rio</span></p>
                 </div>
                 <div class="d-flex flex-column col-11 col-md-5 ml-2 mr-2 mb-3">
                     <h2>Galeria de Fotos</h2>
@@ -136,7 +136,11 @@
         <div class="container">
             <div class="row justify-content-center pt-5">
                 <div class="col-11 col-md-5 ml-2 mr-2">
-                    <h2 style="text-align: center;" class="mb-3">Entre em Contato</h2>
+                    <h2 style="text-align: center;" class="mb-3">
+                        <span style="transition: all 0.2s linear;" onmouseenter="mudarLetra(this)" onmouseout="letraNormal(this)" >
+                            Entre em Contato
+                        </span>
+                    </h2>
                     <form>
                         <input class="form-control mt-2 mb-2" type="text" placeholder="Nome">
                         <input class="form-control mt-2 mb-2" type="number" placeholder="WhatsApp">
@@ -145,7 +149,11 @@
                     <button class="btn botao_laranja form-control mt-2 mb-5" type="button">Enviar</button>
                 </div>
                 <div class="d-flex flex-column col-11 col-md-5 ml-2 mr-2">
-                    <h2>Social e Agendamentos</h2>
+                    <h2>
+                        <span style="transition: all 0.2s linear;" onmouseenter="mudarLetra(this)" onmouseout="letraNormal(this)">
+                            Social e Agendamentos
+                        </span>
+                    </h2>
                     <div class="mt-2 mb-2">
                         <a href="#"><i class="fa-brands fa-facebook fa-2xl " style="color: #ffffff;"></i></a>
                         <a class="mr-2 ml-2" href="#"><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
@@ -174,6 +182,8 @@
     <footer id="rodape"> <!--Rodape-->
         <p>Barbearia Lorem - Copyright &copy; 2024 | Todos Direitos Reservados <br> Feito pelo - <a href="https://www.instagram.com/devluizsilva" target="_blank">Desenvolvedor Luiz Silva</a> </p>
     </footer> <!--Fim Rodape-->
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>

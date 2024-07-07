@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     color: white;
     background-color: #191919;
@@ -46,6 +50,8 @@ h2{
 
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
+
+    transition: all 0.2s linear;
 }
 
 .branco{
@@ -154,6 +160,12 @@ section#sobre .espaco{
     font-weight: bold;
 }
 
+section#sobre #local{
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 1.2s linear;
+}
+
 section#sobre img{
     border-radius: 7px;
 }
@@ -182,4 +194,16 @@ footer#rodape{
 footer#rodape p{
     text-align: center;
     padding-top: 15px;
+}
+
+/*Classes Animações JS
+--------------*/
+.invis{
+    opacity: 0;
+    filter: opacity(0px);
+}
+
+.visi{
+    opacity: 1;
+    filter: opacity(200px);
 }
