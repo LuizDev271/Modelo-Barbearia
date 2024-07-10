@@ -19,7 +19,7 @@ function letraNormal(elemento){
 function animationLocal(){
 
     rolagem = scrollY
-    console.log(rolagem)
+
     
     if(rolagem >= 870){
         local.classList.remove('invis')
