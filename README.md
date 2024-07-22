@@ -19,3 +19,6 @@ Projeto individual, Modelo de Site Responsivo de Barbeira, criado a base de HTML
 
 <br>  
 Link: https://luizdev271.github.io/Modelo-Barbearia/
+<br> 
+<br> 
+Inspiração: https://www.behance.net/gallery/160496295/Site-Barbearia/modules/905485315
