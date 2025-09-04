@@ -16,9 +16,3 @@
 
 Projeto individual, Modelo de Site Responsivo de Barbeira, criado a base de HTML5, CSS3, Bootstrap e JavaScript, abrangendo recursos como Flex-Box, Media Queries, Barra de Navegação Líquida, Imagens com resoluções Fluídas, entre outros recursos.
 (Disponível em Monitores de PC, Smartphones)
-
-<br>  
-Link: https://luizdev271.github.io/Modelo-Barbearia/
-<br> 
-<br> 
-Inspiração: https://www.behance.net/gallery/160496295/Site-Barbearia/modules/905485315
